@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: JGrouptestListenerProject
+  gitServerName: amkuGit_1
+  gitUrl: https://github.com/amkuamrk
+  gitUsername: amkuamrk
+  gitBranch: main
