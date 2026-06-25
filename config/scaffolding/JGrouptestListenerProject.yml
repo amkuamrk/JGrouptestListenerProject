@@ -7,3 +7,6 @@ packages:
   gitUrl: https://github.com/amkuamrk
   gitUsername: amkuamrk
   gitBranch: main
+- name: WmSalesforceProvider
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: supported
