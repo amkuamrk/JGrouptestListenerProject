@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Amrendra.Kumar8@ibm.com</value>
-    <value name="lastModifiedDate">1782415285495</value>
+    <value name="lastModifiedDate">1782415373517</value>
     <value name="displayName">lisTest</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -60,7 +60,7 @@
         <value name="name">Salesforce® CRM SOAP</value>
         <value name="itemType">APPS</value>
         <record name="operation" javaclass="com.wm.util.Values">
-          <value name="operationName">createAccount</value>
+          <value name="operationName">tedt</value>
           <value name="isCustom">true</value>
           <value name="operationType">actions</value>
           <value name="connectionType">sagcloud</value>
@@ -101,7 +101,8 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
-        <null name="mapSet"/>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
         <array name="inputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
