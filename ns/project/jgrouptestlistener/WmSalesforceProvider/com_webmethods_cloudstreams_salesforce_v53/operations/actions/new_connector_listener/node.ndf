@@ -52,11 +52,17 @@
       <value name="namespace">wmSalesforceConnector_v53_1.document.listener:pushTopicEventResponse</value>
       <value name="clusterMode">multiNode</value>
       <record name="action" javaclass="com.wm.util.Values">
-        <null name="service"/>
-        <null name="log"/>
+        <record name="service" javaclass="com.wm.util.Values">
+          <null name="name"/>
+          <value name="syncMode">false</value>
+          <null name="runAsUser"/>
+        </record>
+        <record name="log" javaclass="com.wm.util.Values">
+          <null name="level"/>
+        </record>
       </record>
     </record>
-    <value name="enabled">false</value>
+    <value name="enabled">true</value>
     <number name="connectionNodeVersion" type="Integer">1</number>
   </record>
 </Values>
