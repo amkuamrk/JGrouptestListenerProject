@@ -8,5 +8,13 @@ packages:
   gitUsername: amkuamrk
   gitBranch: main
 - name: WmSalesforceProvider
+  version: 12.0.0.0.22
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
+services:
+- serviceName: project.jgrouptestlistener.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:listenertestaccount
+  packages:
+  - name: JGrouptestListenerProject
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.22
