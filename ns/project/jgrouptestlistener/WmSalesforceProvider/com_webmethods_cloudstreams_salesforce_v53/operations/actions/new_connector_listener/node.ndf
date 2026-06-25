@@ -38,7 +38,7 @@
           <value name="name">pushTopicName</value>
           <value name="dataType">String</value>
           <value name="type">URI_CONTEXT</value>
-          <value name="defaultValue">updateAccount</value>
+          <value name="defaultValue">AccountUpdate</value>
           <value name="description">PushTopic name</value>
           <value name="isRequired">true</value>
           <value name="isActive">true</value>
