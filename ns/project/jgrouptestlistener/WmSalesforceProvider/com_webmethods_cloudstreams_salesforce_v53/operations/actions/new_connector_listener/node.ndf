@@ -53,16 +53,16 @@
       <value name="clusterMode">multiNode</value>
       <record name="action" javaclass="com.wm.util.Values">
         <record name="service" javaclass="com.wm.util.Values">
-          <null name="name"/>
+          <value name="name">project.jgrouptestlistener.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:new_flowservice</value>
           <value name="syncMode">false</value>
-          <null name="runAsUser"/>
+          <value name="runAsUser">Default</value>
         </record>
         <record name="log" javaclass="com.wm.util.Values">
-          <null name="level"/>
+          <value name="level">Info</value>
         </record>
       </record>
     </record>
-    <value name="enabled">true</value>
+    <value name="enabled">false</value>
     <number name="connectionNodeVersion" type="Integer">1</number>
   </record>
 </Values>
