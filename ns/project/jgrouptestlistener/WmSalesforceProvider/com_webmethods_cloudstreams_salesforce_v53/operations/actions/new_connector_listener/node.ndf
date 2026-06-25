@@ -62,7 +62,7 @@
         </record>
       </record>
     </record>
-    <value name="enabled">false</value>
+    <value name="enabled">true</value>
     <number name="connectionNodeVersion" type="Integer">1</number>
   </record>
 </Values>
