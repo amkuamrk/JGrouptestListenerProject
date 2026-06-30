@@ -5,7 +5,7 @@
 
   <!-- nodes -->
 
-<INVOKE NAME="Invoke predefined:com.webmethods.cloudstreams.salesforce_v53" TIMEOUT="" SERVICE="project.jgrouptestlistener.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:createAccount" VALIDATE-IN="" VALIDATE-OUT="">
+<INVOKE NAME="Invoke predefined:com.webmethods.cloudstreams.salesforce_v53" TIMEOUT="" SERVICE="project.jgrouptestlistener.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:updateaa" VALIDATE-IN="" VALIDATE-OUT="">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
@@ -29,7 +29,7 @@
         <value name="node_type">record</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">createAccountInput</value>
+        <value name="field_name">updateaaInput</value>
         <value name="field_type">record</value>
         <value name="field_dim">0</value>
         <value name="nillable">true</value>
@@ -65,7 +65,7 @@
                 <value name="node_type">record</value>
                 <value name="node_subtype">unknown</value>
                 <value name="is_public">false</value>
-                <value name="field_name">tns:create</value>
+                <value name="field_name">tns:update</value>
                 <value name="field_type">record</value>
                 <value name="field_dim">0</value>
                 <value name="field_opt">true</value>
@@ -146,8 +146,12 @@
                         <value name="node_type">record</value>
                         <value name="node_subtype">unknown</value>
                         <record name="node_hints" javaclass="com.wm.util.Values">
-                          <value name="field_default_value">${null}</value>
-                          <Boolean name="field_fixed">true</Boolean>
+                          <record name="lookup" javaclass="com.wm.util.Values">
+                            <value name="name">ids</value>
+                            <record name="dependencies" javaclass="com.wm.util.Values">
+                              <value name="businessObject">${core.businessObject}</value>
+                            </record>
+                          </record>
                         </record>
                         <value name="is_public">false</value>
                         <value name="field_name">ens:Id</value>
@@ -178,6 +182,7 @@
                         <value name="field_name">ens:Name</value>
                         <value name="field_type">string</value>
                         <value name="field_dim">0</value>
+                        <value name="field_opt">true</value>
                         <record name="field_content_type" javaclass="com.wm.util.Values">
                           <value name="contentType">1</value>
                           <value name="internalType">reference</value>
@@ -190,6 +195,43 @@
                           </array>
                         </record>
                         <value name="nillable">false</value>
+                        <value name="field_xmlns">urn:sobject.partner.soap.sforce.com</value>
+                        <value name="form_qualified">false</value>
+                        <value name="is_global">false</value>
+                      </record>
+                      <record javaclass="com.wm.util.Values">
+                        <value name="node_type">field</value>
+                        <value name="node_subtype">unknown</value>
+                        <record name="node_hints" javaclass="com.wm.util.Values">
+                          <value name="field_usereditable">true</value>
+                        </record>
+                        <value name="is_public">false</value>
+                        <value name="displayName">Account Type</value>
+                        <value name="field_name">ens:Type</value>
+                        <value name="field_type">string</value>
+                        <value name="field_dim">0</value>
+                        <value name="field_opt">true</value>
+                        <array name="field_options" type="value" depth="1">
+                          <value>Prospect</value>
+                          <value>Customer - Direct</value>
+                          <value>Customer - Channel</value>
+                          <value>Channel Partner / Reseller</value>
+                          <value>Installation Partner</value>
+                          <value>Technology Partner</value>
+                          <value>Other</value>
+                        </array>
+                        <record name="field_content_type" javaclass="com.wm.util.Values">
+                          <value name="contentType">1</value>
+                          <value name="internalType">reference</value>
+                          <value name="dataTypeVersion">dtVersion2</value>
+                          <array name="targetNames" type="record" depth="1">
+                            <record javaclass="com.wm.util.Values">
+                              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                              <value name="ncName">string</value>
+                            </record>
+                          </array>
+                        </record>
+                        <value name="nillable">true</value>
                         <value name="field_xmlns">urn:sobject.partner.soap.sforce.com</value>
                         <value name="form_qualified">false</value>
                         <value name="is_global">false</value>
@@ -260,13 +302,15 @@
 </DATA>
 </MAPSET>
 
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/createAccountInput;2;0/requestBody;2;0/tns:create;2;0/tns:sObjects;2;1">
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/updateaaInput;2;0/requestBody;2;0/tns:update;2;0/tns:sObjects;2;1">
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
   <array name="xml" type="record" depth="1">
     <record javaclass="com.wm.util.Values">
-      <value name="ens:Name">fdsfdsfdsfds</value>
+      <value name="ens:Id">001J200000MsSfwIAF</value>
+      <value name="ens:Name">listenerAccUpdateEventTest</value>
+      <value name="ens:Type"></value>
     </record>
   </array>
 </Values>
@@ -278,4 +322,8 @@
   <COMMENT></COMMENT>
 </MAP>
 </INVOKE>
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+</SEQUENCE>
 </FLOW>
