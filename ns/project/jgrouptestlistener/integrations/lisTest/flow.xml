@@ -689,7 +689,7 @@
 </MAP>
 </INVOKE>
 
-<UNTIL NAME="UNTIL" CONDITION="((%/$connectionAlias%!=&#39;dsadsa&#39;))">
+<UNTIL NAME="UNTIL" CONDITION="((%/createAccountOutput/status%==&#39;200&#39;))">
 </UNTIL>
 </DO>
 </FLOW>
