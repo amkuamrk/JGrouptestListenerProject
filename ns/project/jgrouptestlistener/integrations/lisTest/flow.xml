@@ -5,6 +5,10 @@
 
   <!-- nodes -->
 
+<DO NAME="DO"  MAXITERATIONS="-1">
+
+  <!-- nodes -->
+
 <INVOKE NAME="Invoke predefined:com.webmethods.cloudstreams.salesforce_v53" TIMEOUT="" SERVICE="project.jgrouptestlistener.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:createAccount" VALIDATE-IN="" VALIDATE-OUT="">
   <COMMENT></COMMENT>
 
@@ -657,6 +661,17 @@
         </array>
         <value name="modifiable">true</value>
       </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$iterationCount</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
     </array>
     <value name="modifiable">true</value>
   </record>
@@ -673,4 +688,8 @@
   <COMMENT></COMMENT>
 </MAP>
 </INVOKE>
+
+<UNTIL NAME="UNTIL" CONDITION="((%/$connectionAlias%!=&#39;dsadsa&#39;))">
+</UNTIL>
+</DO>
 </FLOW>
