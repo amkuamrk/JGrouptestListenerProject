@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Amrendra.Kumar8@ibm.com</value>
-    <value name="lastModifiedDate">1783010579355</value>
+    <value name="lastModifiedDate">1783327364359</value>
     <value name="displayName">lisTest</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -72,6 +72,7 @@
         <value name="nodePathNew">0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">1</number>
+        <value name="nodePathForDebug">0</value>
       </record>
       <record name="/0/0" javaclass="com.wm.util.Values">
         <value name="name">Salesforce® CRM SOAP</value>
@@ -134,7 +135,7 @@
         <number name="lineNumberForDebug" type="Long">2</number>
         <null name="outputMapSet"/>
         <Boolean name="xmlMapsetSupported">true</Boolean>
-        <value name="nodePathForDebug">0</value>
+        <value name="nodePathForDebug">0.0</value>
       </record>
       <record name="/0/1" javaclass="com.wm.util.Values">
         <value name="name">Salesforce® CRM SOAP</value>
@@ -192,7 +193,7 @@
         <number name="nodeIndex" type="Long">1</number>
         <number name="lineNumberForDebug" type="Long">3</number>
         <null name="outputMapSet"/>
-        <value name="nodePathForDebug">1</value>
+        <value name="nodePathForDebug">0.1</value>
       </record>
       <record name="/0/2" javaclass="com.wm.util.Values">
         <value name="name">UNTIL</value>
@@ -210,6 +211,70 @@
         <value name="nodePathNew">0.2</value>
         <number name="nodeIndex" type="Long">2</number>
         <number name="lineNumberForDebug" type="Long">4</number>
+        <value name="nodePathForDebug">0.2</value>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <value name="name">Salesforce® CRM SOAP</value>
+        <value name="itemType">APPS</value>
+        <record name="operation" javaclass="com.wm.util.Values">
+          <value name="connectorID">com.webmethods.cloudstreams.salesforce_v53</value>
+          <value name="isCustom">true</value>
+          <value name="isDynamicOperation">false</value>
+          <value name="isImportedOperation">false</value>
+          <value name="nsName">project.jgrouptestlistener.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:createAccount</value>
+          <value name="operationName">createAccount</value>
+          <value name="operationType">actions</value>
+          <value name="packageName">JGrouptestListenerProject</value>
+          <value name="projectName">project.jgrouptestlistener</value>
+        </record>
+        <value name="id">com.webmethods.cloudstreams.salesforce_v53</value>
+        <value name="providerName">WmSalesforceProvider</value>
+        <value name="allowCustomOperations">true</value>
+        <value name="appType">predefined</value>
+        <Boolean name="hasAccount">true</Boolean>
+        <record name="connection" javaclass="com.wm.util.Values">
+          <value name="connectionName">listenertestaccount</value>
+          <value name="connectionType">sagcloud</value>
+          <null name="description"/>
+        </record>
+        <value name="connectionNSName">project.jgrouptestlistener.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:listenertestaccount</value>
+        <value name="connectionType">sagcloud</value>
+        <value name="type">SOAP</value>
+        <value name="version">53.1</value>
+        <value name="packageName">WmSalesforceProvider</value>
+        <value name="description">Salesforce, using the Partner SOAP API version 53, supports all business objects (for example, Account) and operations including any customizations done on the Salesforce instance. It also supports Salesforce analytics using wave.</value>
+        <value name="extensionName">WmSalesforceProviderExt</value>
+        <null name="certified"/>
+        <value name="registry">supported</value>
+        <value name="category">connector</value>
+        <value name="registeredDate">21/10/2025</value>
+        <Boolean name="installed">true</Boolean>
+        <Boolean name="latest">true</Boolean>
+        <Boolean name="allowDeleteApplication">false</Boolean>
+        <Boolean name="allowUpdateApplication">false</Boolean>
+        <number name="index" type="Long">5</number>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <null name="mapSet"/>
+        <array name="inputMap" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <Boolean name="accountReferenceResolved">true</Boolean>
+        <number name="ui_step_index" type="Long">1</number>
+        <value name="nodePathNew">0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
+        <null name="outputMapSet"/>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
+        <value name="nodePathForDebug">0.0</value>
       </record>
     </record>
   </record>
