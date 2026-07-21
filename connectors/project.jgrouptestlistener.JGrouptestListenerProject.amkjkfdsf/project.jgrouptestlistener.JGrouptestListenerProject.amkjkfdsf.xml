@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rest-connector xmlns="http://www.webmethods.com/cloudstreams/metadata/handler/model" id="project.jgrouptestlistener.JGrouptestListenerProject.amkjkfdsf" version="1.0" name="amkjkfdsf" displayName="amkjkfdsf">
+    <connections>
+        <connection type="sagcloud" name="amkjkfdsfconnection" displayName="amkjkfdsfconnection">
+            <groups>
+                <group type="connection" name="connection" displayName="Connection">
+                    <description>Define the required connection configurations to initiate communication with the SaaS provider.</description>
+                    <fields>
+                        <field isRequired="true" isEncrypted="false" isHidden="false" isArray="false" defaultValue="https://google.com" name="cn.providerUrl" displayName="Server URL">
+                            <description>The native provider endpoint target for the connection configuration</description>
+                        </field>
+                    </fields>
+                </group>
+                <group type="credentials" name="credentials" displayName="Credentials">
+                    <description>Define configurations needed for the username and password based authentication to the SaaS provider.</description>
+                    <fields/>
+                </group>
+            </groups>
+        </connection>
+    </connections>
+    <services>
+        <service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="RESTServiceType" endpoint="${cn.providerUrl}" name="amkjkfdsfservice" displayName="amkjkfdsfservice">
+            <documentModel packageName="." nsName="project.jgrouptestlistener.JGrouptestListenerProject.amkjkfdsf.amkjkfdsfservice.doctypes" useInlineModel="false"/>
+            <resources>
+                <resource method="GET" path="fsdfd" type="SIMPLE" tag="amkj" name="getamkj" displayName="getamkj">
+                    <mappings/>
+                    <parameters/>
+                    <responses>
+                        <response name="fdsfds" code="200" messageFormatterType="application/octet+idataoref" builderType="application/json" documentRef="project.jgrouptestlistener.JGrouptestListenerProject.amkjkfdsf.amkjkfdsfservice.doctypes:fdsfds" excludeRoot="true" dimension="0"/>
+                    </responses>
+                </resource>
+            </resources>
+        </service>
+    </services>
+</rest-connector>
