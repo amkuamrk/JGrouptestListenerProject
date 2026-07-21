@@ -16,7 +16,7 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
-- serviceName: project.jgrouptestlistener.JGrouptestListenerProject.project_jgrouptestlistener_JGrouptestListenerProject_amkuTEST.connections:fdsfd
+- serviceName: project.jgrouptestlistener.JGrouptestListenerProject.project_jgrouptestlistener_JGrouptestListenerProject_amkuTEST.connections:fdsfds
   packages:
   - name: JGrouptestListenerProject
     version: "1.0"
