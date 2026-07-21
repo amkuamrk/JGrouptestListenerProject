@@ -6,23 +6,29 @@
   <value name="system_package">no</value>
   <value name="version">1.0</value>
   <value name="name">JGrouptestListenerProject</value>
-  <null name="startup_services"/>
-  <null name="shutdown_services"/>
+  <record name="startup_services" javaclass="com.wm.util.Values">
+    <null name="wm.cloudstreams.jgrouptestlistener.JGrouptestListenerProject.plm:registerProvider"/>
+  </record>
+  <record name="shutdown_services" javaclass="com.wm.util.Values">
+    <null name="wm.cloudstreams.jgrouptestlistener.JGrouptestListenerProject.plm:unregisterProvider"/>
+  </record>
   <null name="replication_services"/>
   <record name="requires" javaclass="com.wm.util.Values">
     <value name="WmSalesforceProvider">12.0.0.0.22</value>
+    <value name="WmCloudStreams">12.1.0</value>
   </record>
   <null name="lazy_load_node_types"/>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">33</value>
+  <value name="build">34</value>
   <null name="description"/>
   <value name="created_date">25-06-2026 18:58:07 GMT</value>
   <null name="extendedProperties"/>
   <value name="target_server_version">12.1.0.0</value>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-07-07T05:51:03.550547915Z</value>
+  <value name="lastUpdated">2026-07-21T14:39:16.586674068Z</value>
   <value name="wmProjectId">fl037a278bc6924f4b839b939a8adfbcc6</value>
   <value name="creator">Amrendra Kumar</value>
+  <null name="publisher"/>
 </Values>
