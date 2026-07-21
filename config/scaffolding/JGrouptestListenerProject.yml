@@ -11,10 +11,82 @@ packages:
   version: 12.0.0.0.22
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
+- name: WmCloudStreams
+  version: 12.1.0
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
 services:
-- serviceName: project.jgrouptestlistener.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:listenertestaccount
+- serviceName: project.jgrouptestlistener.JGrouptestListenerProject.project_jgrouptestlistener_JGrouptestListenerProject_test1111.connections:testss
   packages:
   - name: JGrouptestListenerProject
     version: "1.0"
+  - name: WmCloudStreams
+    version: 12.1.0.0.80
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
   - name: WmSalesforceProvider
-    version: 12.0.0.0.22
+    version: 12.0.0.0.23
+- serviceName: project.jgrouptestlistener.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:createAccount
+  packages:
+  - name: JGrouptestListenerProject
+    version: "1.0"
+  - name: WmCloudStreams
+    version: 12.1.0.0.80
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
+- serviceName: project.jgrouptestlistener.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:deleteAccount
+  packages:
+  - name: JGrouptestListenerProject
+    version: "1.0"
+  - name: WmCloudStreams
+    version: 12.1.0.0.80
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
+- serviceName: project.jgrouptestlistener.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:new_flowservice
+  packages:
+  - name: JGrouptestListenerProject
+    version: "1.0"
+  - name: WmCloudStreams
+    version: 12.1.0.0.80
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1022
+- serviceName: project.jgrouptestlistener.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:tedt
+  packages:
+  - name: JGrouptestListenerProject
+    version: "1.0"
+  - name: WmCloudStreams
+    version: 12.1.0.0.80
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
+- serviceName: project.jgrouptestlistener.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:updateaa
+  packages:
+  - name: JGrouptestListenerProject
+    version: "1.0"
+  - name: WmCloudStreams
+    version: 12.1.0.0.80
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
+- serviceName: project.jgrouptestlistener.integrations:lisTest
+  packages:
+  - name: JGrouptestListenerProject
+    version: "1.0"
+  - name: WmCloudStreams
+    version: 12.1.0.0.80
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
