@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rest-connector xmlns="http://www.webmethods.com/cloudstreams/metadata/handler/model" id="project.jgrouptestlistener.JGrouptestListenerProject.amkuTest123" version="1.0" name="amkuTest123" displayName="amkuTest123">
+    <connections>
+        <connection type="sagcloud" name="amkuTest123connection" displayName="amkuTest123connection">
+            <groups>
+                <group type="connection" name="connection" displayName="Connection">
+                    <description>Define the required connection configurations to initiate communication with the SaaS provider.</description>
+                    <fields>
+                        <field isRequired="true" isEncrypted="false" isHidden="false" isArray="false" defaultValue="https://google.com" name="cn.providerUrl" displayName="Server URL">
+                            <description>The native provider endpoint target for the connection configuration</description>
+                        </field>
+                    </fields>
+                </group>
+                <group type="credentials" name="credentials" displayName="Credentials">
+                    <description>Define configurations needed for the username and password based authentication to the SaaS provider.</description>
+                    <fields/>
+                </group>
+            </groups>
+        </connection>
+    </connections>
+    <services>
+        <service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="RESTServiceType" endpoint="${cn.providerUrl}" name="amkutest123service" displayName="amkutest123service">
+            <documentModel packageName="." nsName="project.jgrouptestlistener.JGrouptestListenerProject.amkuTest123.amkutest123service.doctypes" useInlineModel="false"/>
+            <resources>
+                <resource method="GET" path="/" type="SIMPLE" tag="tes" name="gettes" displayName="gettes">
+                    <mappings/>
+                    <parameters/>
+                    <responses>
+                        <response name="tes" code="200" messageFormatterType="application/octet+idataoref" builderType="application/json" documentRef="project.jgrouptestlistener.JGrouptestListenerProject.amkuTest123.amkutest123service.doctypes:tes" excludeRoot="true" dimension="0"/>
+                    </responses>
+                </resource>
+            </resources>
+        </service>
+    </services>
+</rest-connector>
