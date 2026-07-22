@@ -2,6 +2,7 @@
 <services>
     <cloudstreamsCollectionKeys serviceName="WmCloudStreams.RestVS">
         <servicesKeys>
+            <keyDetails collectionKey="project.jgrouptestlistener.JGrouptestListenerProject.project_jgrouptestlistener_JGrouptestListenerProject_connector2.operations.actions:tsts" connectorServiceName="project.jgrouptestlistener.JGrouptestListenerProject.project_jgrouptestlistener_JGrouptestListenerProject_connector2.operations.actions:tsts"/>
             <keyDetails collectionKey="project.jgrouptestlistener.JGrouptestListenerProject.project_jgrouptestlistener_JGrouptestListenerProject_test.operations.actions:testss" connectorServiceName="project.jgrouptestlistener.JGrouptestListenerProject.project_jgrouptestlistener_JGrouptestListenerProject_test.operations.actions:testss"/>
         </servicesKeys>
     </cloudstreamsCollectionKeys>
